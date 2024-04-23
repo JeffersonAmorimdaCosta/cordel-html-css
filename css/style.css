@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font-default);
+}
+
+:root {
+    --font-header: 'Passion one', cursive;
+    --font-paragraph: 'Sriracha', cursive;
+    --font-default: Verdana, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+header > h1{
+    font-family: var(--font-header);
+    color: white;
+    /* font-size: 13.66rem; */
+    font-size: clamp(5.5rem, 10vw, 16rem);
+    padding-top: 5rem;
+    font-variant: small-caps;
+}
+
+header > p {
+    font-size: 1.6rem;
+    color: white;
+}
+
+main {
+    background-color: white;
+}
+
+section {
+    padding: 10vh 0 10vh 2.2vw;
+}
+
+section pre {
+    line-height: 2em;
+    padding-bottom: 9.562rem;
+    font-family: var(--font-paragraph);
+    font-size: clamp(1.8rem, 3.5vw, 8rem);
+    white-space: pre-line;
+}
+
+.image {
+    background-color: rgb(51, 51, 51);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, .5);
+}
+
+.image pre {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    padding: .5rem;
+    text-shadow: 1px 1px 0 black;
+}
+
+#image-one {
+    background-image: url(../img/background001.jpg);
+}
+
+#image-two {
+    background-image: url(../img/background002.jpg);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1rem;
+}
